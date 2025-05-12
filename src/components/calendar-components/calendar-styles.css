@@ -1,0 +1,77 @@
+
+.rbc-calendar {
+	font: inherit;
+}
+
+.rbc-header {
+	padding: 0.5rem 0.75rem;
+	font-weight: bold;
+	font-size: 0.875rem;
+	border-bottom: 1px solid hsl(var(--border)) !important;
+}
+
+.rbc-event {
+    background-color: transparent;
+	overflow: visible !important;
+	/* @apply !border-gray-400; */
+	/* background-color: hsl(var(--primary)); */
+}
+
+.rbc-today {
+	/* background-color: hsl(var(--primary)) !important; */
+	@apply !bg-orange-50;
+	/* opacity: 0.1; */
+	border: none !important;
+}
+
+.rbc-day-bg {
+	border-left: 1px solid hsl(var(--border)) !important;
+}
+
+.rbc-header {
+	border-left: 1px solid hsl(var(--border)) !important;
+	border-bottom: none !important;
+	border-top: none !important;
+}
+
+.rbc-month-row {
+	border-top: 1px solid hsl(var(--border)) !important;
+}
+
+.rbc-month-view {
+	border: 1px solid hsl(var(--border)) !important;
+	border-top: none !important;
+	border-left: none !important;
+}
+
+.rbc-off-range-bg {
+	background-color: hsl(var(--secondary)) !important;
+	border-left: 1px solid hsl(var(--border)) !important;
+}
+
+/*Event Styles*/
+.rbc-event,
+.rbc-background-event {
+	/* z-index: 2; */
+	padding: 0px !important;
+	border: none !important;
+}
+
+.rbc-event-label {
+	display: none !important;
+}
+
+.rbc-allday-cell {
+	display: none;
+}
+
+/* event-day custom class for day cell containing an event in month calendar */
+.event-day {
+	border: none !important;
+    @apply !rounded-md;
+    min-height: 100px !important;
+}
+
+.rbc-day-slot .rbc-events-container {
+	margin-right: 0px !important;
+}
